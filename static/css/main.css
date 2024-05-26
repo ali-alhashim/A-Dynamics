@@ -91,12 +91,39 @@ textarea {
     height: 100vh;
     background-color: #f0f0f0;
     overflow-y: scroll;
+    border: solid 1px #d1d1d1;
     
   }
 
   .work-space{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .subnavbar
+  {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 48px;
+    background-color: #fff;
+    border: solid 1px #e4e4e4;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subnavbar-item
+  {
+    display: flex; 
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 5px;
+    
   }
 
   .sidebar-menu{
