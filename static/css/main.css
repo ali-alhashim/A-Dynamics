@@ -1,0 +1,103 @@
+body,
+button,
+input,
+select,
+table,
+textarea {
+  
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: 'SegoeUI', 'Segoe UI';
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    src: local('Segoe UI'), url("../font/Segoe_UI.ttf") format("ttf");
+  }
+
+  html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  body{
+    background-color: rgb(250, 250, 250);
+    padding: 0;
+    margin: 0;
+    height: 100vh; /* Ensure the body takes full viewport height */
+  }
+
+  .navbar
+  {
+    width: 100%;
+    background-color: #021838;
+    margin: 0;
+    color: #fff;   
+    height: 48px;
+  }
+  .nav-item{
+    margin-top: 12px;
+    
+  }
+  .brand{
+   
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 100px;
+    
+  }
+
+  .nav-content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+  }
+
+  .page-content
+  {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    
+  }
+
+.sidebar{
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .work-space{
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar-menu{
+    list-style: none;
+    padding: 0;
+    
+  }
+
+  .sidebar-item
+  {
+    
+    height: 48px;
+    margin: 10px 0;
+    background-color: #e4e4e4;
+    width: 100%;
+    
+   
+  }
+
+  .sidebar-item-link{
+    text-decoration: none;
+    margin-left: 30px;
+  }
