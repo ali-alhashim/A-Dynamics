@@ -152,6 +152,11 @@ textarea {
     border-left: #0a57c9 solid 10px;
   }
 
+  .sidebar-item-active{
+    background-color: #f7f7f7;
+    border-left: #0a57c9 solid 10px;
+  }
+
   .sidebar-item-link{
     text-decoration: none;
     margin-left: 30px;
