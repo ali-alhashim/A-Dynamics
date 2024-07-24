@@ -1,0 +1,10 @@
+select {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+  }
+

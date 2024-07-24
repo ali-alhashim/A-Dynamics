@@ -1,0 +1,29 @@
+.custom-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-input input {
+    border: solid #ccc 1px;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .input-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #0a57c9;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-input input:focus ~ .input-border {
+    transform: scaleX(1);
+  }
+  
