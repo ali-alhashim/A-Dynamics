@@ -10,8 +10,7 @@
     <link href="./static/css/input.css" rel="stylesheet"/>
     <link href="./static/css/select.css" rel="stylesheet"/>
 
-    <!--google icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
 
@@ -33,13 +32,9 @@
 
         <div class="nav-item profile">
 
-            <span class="material-symbols-outlined">
-                notifications
-                </span>
+             <img src="./static/icons/Notification.png" width="24px" height="24px">
 
-            <span class="material-symbols-outlined">
-                account_circle
-                </span>
+            <img src="./static/icons/profile.png" width="24px" height="24px">
         </div>
 
     </div>
@@ -52,102 +47,126 @@
 <div class="sidebar">
    <ul class="sidebar-menu">
 
-    <li class="sidebar-item sidebar-item-active">
+    <li class="sidebar-item ">
        <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            dashboard
-            </span>
+        <img src="./static/icons/DashboardLayout.png">
          Dashboard </a>
     </li>
 
     <li class="sidebar-item">
-        <a href="" class="sidebar-item-link">
-            <span class="material-symbols-outlined">
-                family_restroom
-                </span>
+        <a href="#" class="sidebar-item-link" onclick="submenu('HR-sub-menu-items');">
+            <img src="./static/icons/HR.png">
             HR </a>
     </li>
+    <ul class="sub-menu" id="HR-sub-menu-items">
+        <li>
+            <a href="#">Employees</a>
+        </li>
+        <li>
+            <a href="#">Branshes</a>
+        </li>
+        <li>
+            <a href="#">Department</a>
+        </li>
+        <li>
+            <a href="#">Clearnce</a>
+        </li>
+        <li>
+            <a href="#">Attendance Devices</a>
+        </li>
+        <li>
+            <a href="#">Payroll</a>
+        </li>
+    </ul>
 
     <li class="sidebar-item">
-        <a href="" class="sidebar-item-link">
-            <span class="material-symbols-outlined">
-                computer
-                </span>
-            IT</a>
-
+        <a href="#" class="sidebar-item-link" onclick="submenu('IT-sub-menu-items');">
+            <img src="./static/icons/IT.png"> IT
+        </a>
     </li>
 
+    <ul class="sub-menu" id="IT-sub-menu-items">
+        <li>
+            <a href="#">Devices</a>
+        </li>
+        <li>
+            <a href="#">Assets</a>
+        </li>
+        <li>
+            <a href="#">Support Ticket</a>
+        </li>
+        <li>
+            <a href="#">Inks & Printers</a>
+        </li>
+        <li>
+            <a href="#">Requests</a>
+        </li>
+    </ul>
+    
+
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-            <span class="material-symbols-outlined">
-                engineering
-                </span>
+           <img src="./static/icons/Maintenance.png">
             Maintenance</a>
      </li>
 
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            calculate
-            </span>
+      <img src="./static/icons/Estimates.png">
         Accounting
         </a>
     </li>
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            campaign
-            </span>
+        <img src="./static/icons/Commercial.png">
         Markenting
         </a>
     </li>
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            shopping_cart
-            </span>
+        <img src="./static/icons/Procurement.png">
         Procurement 
         </a>
     </li>
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            point_of_sale
-            </span>
+       <img src="./static/icons/sales.png">
         Sales
     </a>
     </li>
 
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            directions_car
-            </span>
+       <img src="./static/icons/car.png">
         Fleet
         </a>
     </li>
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            storefront
-            </span>
+      <img src="./static/icons/shop.png">
         Suppliers 
     </a>
     </li>
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            person_apron
-            </span>
+       <img src="./static/icons/Customer.png">
         Customers 
         </a>
     </li>
 
+    
+
+
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            shield_person
-            </span>
+        <img src="./static/icons/Property.png">
+        Property
+    </a>
+    </li>
+
+    <li class="sidebar-item">
+        <a href="" class="sidebar-item-link">
+       <img src="./static/icons/Shield.png">
         Security
         </a>
     </li>
@@ -155,13 +174,10 @@
 
     <li class="sidebar-item">
         <a href="" class="sidebar-item-link">
-        <span class="material-symbols-outlined">
-            real_estate_agent
-            </span>
-        Property
-    </a>
+       <img src="./static/icons/Settings.png">
+        Settings
+        </a>
     </li>
-
     
     
     
@@ -175,38 +191,28 @@
 <!--subnavbar-->
 <div class="subnavbar">
 
-    <div class="subnavbar-item">
-        <span class="material-symbols-outlined btn">
-            view_list
-            </span>
-        Focused view
-    </div>
+  
 
     <div class="subnavbar-item">
-        <span class="material-symbols-outlined btn">
-            monitoring
-            </span>
+       <img src="./static/icons/Statistics.png">
         Show Chart
     </div>
 
-    <div class="subnavbar-item">
-        <span class="material-symbols-outlined btn">
-            refresh
-            </span>
-        Refresh
-    </div>
+    
 
     <div class="subnavbar-item">
-        <span class="material-symbols-outlined btn">
-            summarize
-            </span>
+       <img src="./static/icons/report.png">
         Report
     </div>
 
     <div class="subnavbar-item">
-        <span class="material-symbols-outlined btn">
-            save
-            </span>
+        <img src="./static/icons/Upload.png">
+         upload
+     </div>
+
+
+    <div class="subnavbar-item">
+       <img src="./static/icons/save.png">
         Export
     </div>
 
@@ -233,9 +239,8 @@
        
 
         <div class="filter-bar-item">
-            <span class="material-symbols-outlined btn">
-                filter_alt
-                </span> Edit Filters
+            <img src="./static/icons/Filter.png" class="btn">
+             Edit Filters
         </div>
 
         <div class="filter-bar-item">
@@ -263,25 +268,25 @@
                   </label>
             </th>
             <th>
-                column name 1 <span class="material-symbols-outlined btn"> swap_vert </span>
+                column name 1 <img src="./static/icons/sort.png" class="btn">
                    
                    
             </th>
 
             <th>
-                column name 2 <span class="material-symbols-outlined btn"> swap_vert </span>
+                column name 2 <img src="./static/icons/sort.png" class="btn">
             </th>
 
             <th>
-                column name 3 <span class="material-symbols-outlined btn"> swap_vert </span>
+                column name 3 <img src="./static/icons/sort.png" class="btn">
             </th>
 
             <th>
-                column name 4 <span class="material-symbols-outlined btn"> swap_vert </span>
+                column name 4 <img src="./static/icons/sort.png" class="btn">
             </th>
 
             <th>
-                column name 5 <span class="material-symbols-outlined btn"> swap_vert </span>
+                column name 5 <img src="./static/icons/sort.png" class="btn">
             </th>
         </thead>
 
