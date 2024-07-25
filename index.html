@@ -34,7 +34,20 @@
 
              <img src="./static/icons/Notification.png" width="24px" height="24px">
 
-            <img src="./static/icons/profile.png" width="24px" height="24px">
+            <img src="./static/icons/profile.png" width="24px" height="24px"  onclick="toggleProfileMenu()">
+
+            <div class="profile-menu" id="profileMenu">
+                <div class="profile-info">
+                    <img src="./static/img/Snapchat-1618655050.jpg" width="48px" height="48px">
+                    <span>Ali M. Alhashim</span>
+                </div>
+                <ul>
+                    <li><a href="#">Update My Information</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+
         </div>
 
     </div>
@@ -212,11 +225,23 @@
 
 
     <li class="sidebar-item">
-        <a href="" class="sidebar-item-link">
+        <a href="#" class="sidebar-item-link" onclick="submenu('Settings-sub-menu-items')">
        <img src="./static/icons/Settings.png">
         Settings
         </a>
     </li>
+    <ul class="sub-menu" id="Settings-sub-menu-items">
+        <li>
+            <a href="#">Database</a>
+        </li>
+        <li>
+            <a href="#">Permissions</a>
+        </li>
+        <li>
+            <a href="#">Approval Flow</a>
+        </li>
+       
+    </ul>
     
     
     

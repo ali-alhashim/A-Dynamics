@@ -12,3 +12,24 @@ function submenu(subMenu)
         
     }
 }
+
+
+
+function toggleProfileMenu() {
+    var profileMenu = document.getElementById('profileMenu');
+    if (profileMenu.classList.contains('show')) {
+        profileMenu.classList.remove('show');
+    } else {
+        profileMenu.classList.add('show');
+    }
+}
+
+// Close the profile menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.profile img')) {
+        var profileMenu = document.getElementById('profileMenu');
+        if (profileMenu.classList.contains('show')) {
+            profileMenu.classList.remove('show');
+        }
+    }
+}
