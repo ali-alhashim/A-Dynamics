@@ -1,0 +1,42 @@
+.button {
+    /* Base button styles */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 16px;
+    border: none;
+    text-decoration: none;
+    
+  }
+  
+  .primary-button {
+    /* Primary button styles */
+    background-color: #0078d4;
+    color: #fff;
+  
+    &:hover {
+      background-color: #006097;
+    }
+  
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+    }
+  }
+
+  .secondary-button {
+
+    background-color: #ffffff;
+    color: #000000;
+    border: #ccc solid 1px;
+    &:hover {
+      background-color: #ccc;
+    }
+  
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(66, 66, 66, 0.2);
+    }
+
+  }
