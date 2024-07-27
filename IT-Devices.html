@@ -298,10 +298,13 @@ IT / Devices
         <div class="filter-bar-item">
            
             <select>
-                <option>Here select list to for filter</option>
-                <option>Here select list to for filter</option>
-                <option>Here select list to for filter</option>
-                <option>Here select list to for filter</option>
+                <option>all</option>
+                <option>damaged</option>
+                <option>used</option>
+                <option>new</option>
+                <option>lost</option>
+                <option>no users</option>
+                <option>with users</option>
             </select>
             
         
@@ -336,6 +339,7 @@ IT / Devices
     <hr>
 
     <!--table view-->
+    <div class="table-view-container">
     <table class="table-view">
         <thead>
             <th>
@@ -366,6 +370,25 @@ IT / Devices
             <th>
                 Manufacture <img src="./static/icons/sort.png" class="btn">
             </th>
+
+            <th>
+                Created Date <img src="./static/icons/sort.png" class="btn">
+            </th>
+            <th>
+                Created by <img src="./static/icons/sort.png" class="btn">
+            </th>
+            <th> 
+                Current User <img src="./static/icons/sort.png" class="btn">
+            </th>
+            <th>
+                Supplier <img src="./static/icons/sort.png" class="btn">
+            </th>
+            <th>
+                Price <img src="./static/icons/sort.png" class="btn">
+            </th>
+            <th>
+                Received Date <img src="./static/icons/sort.png" class="btn">
+            </th>
         </thead>
 
         <tbody>
@@ -392,6 +415,24 @@ IT / Devices
                 <td>
                     Dell
                 </td>
+                <td>
+                    2024 - 07 - 27
+                </td>
+                <td>
+                    Ali M. Alhashim
+                </td>
+                <td>
+                    Nasser Al dossary
+                </td>
+                <td>
+                    Jarir bookstore
+                </td>
+                <td>
+                    3,000.00 SAR
+                </td>
+                <td>
+                    2024 - 04 - 25
+                </td>
             </tr>
 
             <tr>
@@ -416,6 +457,24 @@ IT / Devices
                 </td>
                 <td>
                     Apple
+                </td>
+                <td>
+                    2024 - 07 - 27
+                </td>
+                <td>
+                    Ali M. Alhashim
+                </td>
+                <td>
+                    Mohammed M. Alrmah
+                </td>
+                <td>
+                    Extra store
+                </td>
+                <td>
+                    5,400.00 SAR
+                </td>
+                <td>
+                    2024 - 01 - 01
                 </td>
             </tr>
 
@@ -442,12 +501,32 @@ IT / Devices
                 <td>
                     HP
                 </td>
+                <td>
+                    2024 - 07 - 27
+                </td>
+                <td>
+                    Ali M. Alhashim
+                </td>
+                <td>
+                    Salma Al otabi
+                </td>
+                <td>
+                    Alzahed shop
+                </td>
+                <td>
+                    1,900.00 SAR
+                </td>
+                <td>
+                    2023 - 04 - 25
+                </td>
+
             </tr>
 
            
 
         </tbody>
     </table>
+    </div>
     <!--/table view-->
     
     <!--pagination-->
@@ -487,9 +566,9 @@ IT / Devices
 <!--notification sidebar-->
 <div class="notificationSidebar notificationSidebarItem" id="notification_sidebar">
 
-    <ul class="notificationSidebarItem">
-        <li class="notificationSidebarItem">message 1</li>
-        <li class="notificationSidebarItem">message 2</li>
+    <ul class="notificationSidebarItem menu">
+        <li class="notificationSidebarItem"><a href="#">message 1</a></li>
+        <li class="notificationSidebarItem"><a href="#">message 2</a></li>
     </ul>
 
 </div>

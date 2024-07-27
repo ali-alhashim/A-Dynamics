@@ -198,13 +198,20 @@ textarea {
     padding: 15px;
   }
 
+  .table-view-container {
+    width: 100%;            /* Container takes full width */
+    overflow-x: auto;       /* Enables horizontal scrolling */
+  }
+
 
   .table-view{
     padding: 10px;
-    width: 100%;
+    min-width: 100%;
+    width: fit-content;
     text-align: left;
     background-color: #fff;
     overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 
 

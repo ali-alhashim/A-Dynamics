@@ -9,12 +9,28 @@
     right:0px;
     height: 100%;
     transition: all 0.3s;
-    display:none
+    display:none;
+    padding: 5px;
+    
 }
 
 .notificationSidebar.show{
     display: block;
     opacity: 1;
     transition: all 0.3s;
+}
+
+.notificationSidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notificationSidebar ul li a:hover {
+    background-color: #f7f7f7;
+}
+
+.notificationSidebar ul li {
+    border-top: 1px solid #eee;
 }
 
