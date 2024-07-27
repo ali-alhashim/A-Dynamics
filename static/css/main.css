@@ -59,7 +59,7 @@ textarea {
     
   }
   .brand{
-   
+    white-space: nowrap;
     font-size: 18px;
     margin-left: 50px;
     margin-right: 100px;
