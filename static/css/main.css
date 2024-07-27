@@ -68,7 +68,7 @@ textarea {
 
   .profile{
     margin-right: 50px;
-    
+    gap: 50px;
   }
 
   .main-search input

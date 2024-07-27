@@ -10,7 +10,7 @@
     <link href="./static/css/input.css" rel="stylesheet"/>
     <link href="./static/css/select.css" rel="stylesheet"/>
     <link href="./static/css/button.css" rel="stylesheet"/>
-
+    <link href="./static/css/notification-sidebar.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -32,9 +32,9 @@
 
         <div class="nav-item profile">
 
-             <img src="./static/icons/Notification.png" width="24px" height="24px">
+            <img src="./static/icons/Notification.png" width="24px" height="24px" onclick="toggleByIdMenu('notification_sidebar')" class="btn">
 
-            <img src="./static/icons/profile.png" width="24px" height="24px"  onclick="toggleProfileMenu()">
+            <img src="./static/icons/profile.png" width="24px" height="24px"  onclick="toggleByIdMenu('profileMenu')" class="btn">
 
             <div class="profile-menu" id="profileMenu">
                 <div class="profile-info">
@@ -67,7 +67,7 @@
     </li>
 
     <li class="sidebar-item">
-        <a href="#" class="sidebar-item-link" onclick="submenu('HR-sub-menu-items');">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('HR-sub-menu-items');">
             <img src="./static/icons/HR.png">
             HR </a>
     </li>
@@ -94,7 +94,7 @@
     </ul>
 
     <li class="sidebar-item">
-        <a href="#" class="sidebar-item-link" onclick="submenu('IT-sub-menu-items');">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('IT-sub-menu-items');">
             <img src="./static/icons/IT.png"> IT
         </a>
     </li>
@@ -126,7 +126,7 @@
 
 
     <li class="sidebar-item">
-        <a href="#" class="sidebar-item-link" onclick="submenu('Accounting-sub-menu-items');">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('Accounting-sub-menu-items');">
       <img src="./static/icons/Estimates.png">
         Accounting
         </a>
@@ -153,7 +153,7 @@
     </li>
 
     <li class="sidebar-item">
-        <a href="#" class="sidebar-item-link" onclick="submenu('Procurement-sub-menu-items')">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('Procurement-sub-menu-items')">
         <img src="./static/icons/Procurement.png">
         Procurement 
         </a>
@@ -226,7 +226,7 @@
 
 
     <li class="sidebar-item">
-        <a href="#" class="sidebar-item-link" onclick="submenu('Settings-sub-menu-items')">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('Settings-sub-menu-items')">
        <img src="./static/icons/Settings.png">
         Settings
         </a>
@@ -482,6 +482,18 @@ IT / Devices
 
 
 </div>
+
+
+<!--notification sidebar-->
+<div class="notificationSidebar notificationSidebarItem" id="notification_sidebar">
+
+    <ul class="notificationSidebarItem">
+        <li class="notificationSidebarItem">message 1</li>
+        <li class="notificationSidebarItem">message 2</li>
+    </ul>
+
+</div>
+<!--//notification sidebar-->
 
 <!--main js-->
 <script src="./static/js/main.js"></script>

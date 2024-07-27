@@ -1,0 +1,20 @@
+.notificationSidebar{
+    background-color: #fff;
+    border: #ccc solid 1px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 200px;
+    z-index: 1000;
+    top: 0px;
+    right:0px;
+    height: 100%;
+    transition: all 0.3s;
+    display:none
+}
+
+.notificationSidebar.show{
+    display: block;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
