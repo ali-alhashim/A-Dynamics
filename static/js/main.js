@@ -32,6 +32,16 @@ window.onclick = function(event) {
                 console.log('remove show class from notificationSidebar')
             }
         }
+
+    if(!event.target.matches('.filter-bar-item, .filter-bar-item a img, .filter-bar-item a, #add_new_window, .add-new-window-contaner *, .add-new-window-contaner'))
+    {
+        const add_new_window = document.getElementById('add_new_window');
+        if(add_new_window.classList.contains('show')){
+            add_new_window.classList.remove('show');
+            console.log('remove show class from add_new_window')
+
+        }
+    }
     
    
    

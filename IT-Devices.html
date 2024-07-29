@@ -10,6 +10,7 @@
     <link href="./static/css/input.css" rel="stylesheet"/>
     <link href="./static/css/select.css" rel="stylesheet"/>
     <link href="./static/css/button.css" rel="stylesheet"/>
+    <link href="./static/css/fluent-textarea.css" rel="stylesheet"/>
     <link href="./static/css/notification-sidebar.css" rel="stylesheet"/>
 </head>
 <body>
@@ -425,7 +426,9 @@ IT / Devices
 
 
         <div class="filter-bar-item">
-            <a href="#" class="button"><img src="./static/icons/AddNew.png" class="btn"> Add New</a>
+            <a href="#" class="button" onclick="toggleByIdMenu('add_new_window')">
+                <img src="./static/icons/AddNew.png" class="btn"> Add New
+            </a>
         </div>
 
        
@@ -443,7 +446,7 @@ IT / Devices
             <label class="custom-input">
                 <input type="text" placeholder="Filter by kayword" name="filter-by-kayword">
                 <span class="input-border"></span>
-              </label>
+            </label>
         </div>
 
     </div>
@@ -734,6 +737,154 @@ IT / Devices
 
 </div>
 <!--//notification sidebar-->
+
+
+<!--Add new window-->
+<div class="add-new-window" id="add_new_window">
+   
+    <div class="add-new-window-contaner">
+
+        <form action="/action_page.php" method="POST">
+            <fieldset>
+              <legend>Add New:</legend>
+              <table class="table-view">
+                <tr>
+                    <td>Serial Number</td>
+                    <td>
+                        <label class="custom-input w-100">
+                            <input type="text" placeholder="Serial Number" name="serialNumber" class="w-100">
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Category </td>
+                    <td>
+                        <label class="custom-input w-100">
+                            <input type="text" placeholder="Select Category" name="category" class="w-100" list="category_list">
+                            <datalist id="category_list">
+                              <option>Smart Phone</option>
+                              <option>Laptop</option>
+                              <option>Printer</option>
+                              <option>Switch</option>
+                              <option>Hard Disk</option>
+                              <option>Sold State Drive SSD</option>
+                              <option>Monitor</option>
+                              <option>Wired Keyboard</option>
+                              <option>Wired Mouse</option>
+                              <option>Keyboard And Mouse wireless</option>
+                              <option>Desktop PC</option>
+                              <option>Flash Memory USB</option>
+                              <option>Scanner</option>
+                              <option>Copy Machine</option>
+                              <option>Power Adapter</option>
+                              <option>UPS</option>
+                              <option>NVR</option>
+                              <option>Security Camera</option>
+                            </datalist>
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Status
+                    </td>
+                    <td>
+                        <label class="custom-input w-100">
+                            <input type="text" placeholder="Select Status" name="status" class="w-100" list="status_list">
+                            <datalist id="status_list">
+                              <option>New</option>
+                              <option>Used</option>
+                              <option>Sold</option>
+                              <option>Damaged</option>
+                              <option>Stolen</option>
+                              <option>EOL</option>
+                              
+                            </datalist>
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Manufacture</td>
+
+                    <td>
+                        <label class="custom-input w-100">
+                            <input type="text" placeholder="Select Manufacture" name="manufacture" class="w-100" list="manufacture_list">
+                            <datalist id="manufacture_list">
+                              <option>Microsoft</option>
+                              <option>Apple</option>
+                              <option>Lenovo</option>
+                              <option>Dell</option>
+                              <option>HP</option>
+                              <option>Logi</option>
+                              <option>Asus</option>
+                              <option>MSI</option>
+                              <option>Aser</option>
+                              
+                            </datalist>
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        Model
+                    </td>
+                    <td>
+                    <label class="custom-input w-100">
+                        <input type="text" placeholder="Model" name="model" class="w-100" list="model_list">
+                        <datalist id="model_list">
+                          <option>Dell latutud 5440</option>
+                          <option>Apple Macbook Pro M2</option>
+                        </datalist>
+                        <span class="input-border"></span>
+                    </label>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        Description
+                    </td>
+                    <td>
+                        <textarea class="fluent-textarea w-100" placeholder="Enter Description here..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Invoice #
+                    </td>
+                    <td>
+                        <label class="custom-input w-100">
+                            <input type="text" placeholder="Select Invoice#" name="invoice" class="w-100" list="Invoice_list">
+                            <datalist id="Invoice_list">
+                              <option>RD0551452</option>
+                              <option>858524525205</option>
+                             
+                              
+                            </datalist>
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+                </tr>
+
+
+              </table>
+              <hr>
+              <input type="submit" value="Save" class="primary-button button">
+            </fieldset>
+          </form>
+
+    </div>
+</div>
+<!--/add new window-->
 
 <!--main js-->
 <script src="./static/js/main.js"></script>
