@@ -6,6 +6,7 @@
   
   .custom-input input {
     border: solid #ccc 1px;
+    border-radius: 5px;
     outline: none;
     background: transparent;
     padding: 5px;

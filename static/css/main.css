@@ -9,13 +9,14 @@ textarea {
   font-variant: normal;
   font-weight: normal;
   font-size: 14px;
-  font-family: 'SegoeUI', 'Segoe UI';
+  font-family: 'Tajawal-Regular', sans-serif;
+
 }
 
 @font-face {
-    font-family: 'Segoe UI';
-    font-weight: 400;
-    src: local('Segoe UI'), url("../font/Segoe_UI.ttf") format("ttf");
+    font-family: 'Tajawal-Regular';
+   
+    src: url("../font/Tajawal-Regular.ttf") 
   }
 
   a{
@@ -407,6 +408,10 @@ textarea {
 
 .p-10{
   padding: 10px;
+}
+
+.m-10{
+  margin: 10px !important;
 }
 
  

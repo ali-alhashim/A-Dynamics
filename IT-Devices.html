@@ -964,12 +964,18 @@ IT / Devices
    
     <div class="add-new-window-contaner">
 
-        <form action="Edit_Filter" method="POST" enctype="multipart/form-data">
+        <form action="Edit_Filter" method="GET" enctype="multipart/form-data">
             <fieldset>
               <legend>Edit Filter:</legend>
               <table class="table-view">
+                <thead>
+                    <th>column</th>
+                    <th>Filter</th>
+                    <th>kayword</th>
+                </thead>
+                <tbody id="edit_filter_tbody_id">
                 <tr>
-                    <td>column</td>
+                  
                     <td>
                         <select name="column_1">
                                 <option>ID</option>
@@ -979,26 +985,36 @@ IT / Devices
                         </select>
                     </td>
                     <td>
-                        <select name="filterMethod">
-                            <option>Start with</option>
+                        <select name="filter_Method_1">
+                            <option>Contains</option>
+                            <option>Does not contains</option>
+                            <option>Begin with</option>
+                            <option>Does not begin with</option>
                             <option>End with</option>
+                            <option>Does not end with</option>
                             <option>Equals</option>
                             <option>Does not equal</option>
+                           
+
                         </select>
                     </td>
 
                     <td>
                         <label class="custom-input">
-                            <input type="text" placeholder="Filter by kayword" name="edit_filter_by_kayword">
+                            <input type="text" placeholder="kayword" name="kayword_1">
                             <span class="input-border"></span>
                         </label>
                     </td>
                 </tr>
+            </tbody>
 
 
               </table>
+             
+              <input type="hidden" name="total_column" value="1" id="total_column_id">
+              
               <hr>
-              <input type="submit" value="Filter" class="primary-button button">
+               <a href="#" class="green-button button m-10" onclick="addMoreColumn()">Add More Column</a> <input type="submit" value="Submit" class="primary-button button">
             </fieldset>
           </form>
 
