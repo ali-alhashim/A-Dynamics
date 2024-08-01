@@ -59,6 +59,7 @@
 <div class="page-content">
 <!--sidebar-->
 <div class="sidebar">
+    <div class="sidebar-container">
    <ul class="sidebar-menu">
 
     <li class="sidebar-item ">
@@ -256,6 +257,9 @@
         <li>
             <a href="#">Delivery Note</a>
         </li>
+        <li>
+            <a href="#">Credit Note</a>
+        </li>
 
         <li>
             <a href="#">Purchase Invoices</a>
@@ -267,11 +271,32 @@
     </ul>
 
     <li class="sidebar-item">
-        <a href="" class="sidebar-item-link">
+        <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('Sales-sub-menu-items')">
        <img src="./static/icons/sales.png">
         Sales
        </a>
     </li>
+    <ul class="sub-menu" id="Sales-sub-menu-items">
+        <li>
+            <a href="#">Sales Order</a>
+        </li>
+        <li>
+            <a href="#">Point Of Sales</a>
+        </li>
+        <li>
+            <a href="#">Sales Invoice</a>
+        </li>
+        <li>
+            <a href="#">Quotations</a>
+        </li>
+        <li>
+            <a href="#">Credit Note</a>
+        </li>
+        <li>
+            <a href="#">Delivery Note</a>
+        </li>
+       
+    </ul>
 
     <li class="sidebar-item">
         <a href="#" class="sidebar-item-link" onclick="toggleByIdMenu('Fleet_sub_menu_items')">
@@ -399,6 +424,7 @@
     
     
    </ul>
+</div><!--sidebar container-->
 </div>
 <!--/sidebar-->
 
@@ -480,7 +506,7 @@ IT / Devices
        
 
         <div class="filter-bar-item">
-            <a href="#" class="button">
+            <a href="#" class="button" onclick="toggleByIdMenu('EditFilter_window')">
             <img src="./static/icons/Filter.png" class="btn">
              Edit Filters
             </a>
@@ -925,6 +951,54 @@ IT / Devices
               </table>
               <hr>
               <input type="submit" value="Save" class="primary-button button">
+            </fieldset>
+          </form>
+
+    </div>
+</div>
+<!--/add new window-->
+
+
+<!--Edit Filter-->
+<div class="add-new-window" id="EditFilter_window">
+   
+    <div class="add-new-window-contaner">
+
+        <form action="Edit_Filter" method="POST" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Edit Filter:</legend>
+              <table class="table-view">
+                <tr>
+                    <td>column</td>
+                    <td>
+                        <select name="column_1">
+                                <option>ID</option>
+                                <option>Serial Number</option>
+                                <option>Category</option>
+                                <option>Model</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="filterMethod">
+                            <option>Start with</option>
+                            <option>End with</option>
+                            <option>Equals</option>
+                            <option>Does not equal</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label class="custom-input">
+                            <input type="text" placeholder="Filter by kayword" name="edit_filter_by_kayword">
+                            <span class="input-border"></span>
+                        </label>
+                    </td>
+                </tr>
+
+
+              </table>
+              <hr>
+              <input type="submit" value="Filter" class="primary-button button">
             </fieldset>
           </form>
 
