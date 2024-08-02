@@ -51,7 +51,9 @@ textarea {
     
   }
 
-
+.font-red{
+  color:rgb(139, 0, 0) !important
+}
 
   .nav-item{
     margin-top: 12px;
