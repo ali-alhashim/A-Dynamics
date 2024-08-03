@@ -46,6 +46,7 @@
     flex-direction: column;
     width: 70%;
     max-width: 70%;
+    gap: 10px;
 }
 
 .col-3{
@@ -53,4 +54,5 @@
     flex-direction: column;
     width: 30%;
     max-width: 30%;
+    gap: 10px;
 }

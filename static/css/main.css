@@ -133,8 +133,8 @@ textarea {
   }
   .subnavbar-item
   {
-    display: flex; 
-    flex-direction: row;
+    display: inline-block; 
+    position: relative;
     margin-left: 10px;
     margin-right: 10px;
     gap: 5px;
@@ -269,7 +269,7 @@ textarea {
   .popup-menu{
     display: none;
     position:absolute;
-    top: 15%;
+    
    
     background-color: #fff;
     border: 1px solid #ccc;
