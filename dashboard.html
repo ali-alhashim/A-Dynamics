@@ -78,7 +78,7 @@
     </li>
     <ul class="sub-menu" id="HR-sub-menu-items">
         <li>
-            <a href="#">Employees</a>
+            <a href="./HR-Employees.html">Employees</a>
            
         </li>
         <li>
@@ -445,7 +445,7 @@
         <!--subnavbar-->
 <div class="subnavbar">
 
-  
+    <div class="subnavbar-item"></div>
 
     <div class="subnavbar-item">
         <a href="#" onclick="toggleByIdMenu('HR_Menu')">
@@ -487,20 +487,26 @@
    
 
 
-    <div class="subnavbar-item">
-        <a href="#">
-        <img src="./static/icons/Estimates.png">
-         Accounting
-         </a>
-     </div>
+   
 
 
     <div class="subnavbar-item">
-        <a href="#">
+        <a href="#" onclick="toggleByIdMenu('Cars_Menu')">
        <img src="./static/icons/car.png">
         Cars
         </a>
+
+        <div class="popup-menu" id="Cars_Menu">
+            <ul>
+                <li><a href="#">Request Service</a></li>
+                <li><a href="#">Accident</a></li>
+               
+            </ul>
+        </div>
+
     </div>
+
+    <div class="subnavbar-item"></div>
 
 </div>
 <!--/subnavbar-->

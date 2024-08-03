@@ -455,4 +455,8 @@ textarea {
   margin: 10px !important;
 }
 
+.avatar{
+  max-width: 50px;
+  background-size: cover;
+}
  
